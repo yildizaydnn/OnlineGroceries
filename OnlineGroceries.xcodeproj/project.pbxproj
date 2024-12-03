@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02849A02CFF5CBA00174696 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028499F2CFF5CBA00174696 /* RoundButton.swift */; };
+		F02849A22CFF5E3A00174696 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02849A12CFF5E3A00174696 /* SignInView.swift */; };
 		F031C1B32CFB4AD900FF164F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F031C1B22CFB4AD900FF164F /* Launch Screen.storyboard */; };
 		F07083822CFB49A4009A17B0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07083812CFB49A4009A17B0 /* WelcomeView.swift */; };
+		F0964BBC2CFF7A1E006B6746 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F0964BBB2CFF7A1E006B6746 /* CountryPicker */; };
+		F0964BBE2CFF7A99006B6746 /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0964BBD2CFF7A99006B6746 /* CountryPickerUI.swift */; };
 		F0BC42EE2CFB40D0009F6999 /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BC42ED2CFB40D0009F6999 /* OnlineGroceriesApp.swift */; };
 		F0BC42F22CFB40D1009F6999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BC42F12CFB40D1009F6999 /* Assets.xcassets */; };
 		F0BC42F52CFB40D1009F6999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BC42F42CFB40D1009F6999 /* Preview Assets.xcassets */; };
@@ -20,8 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F028499F2CFF5CBA00174696 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F02849A12CFF5E3A00174696 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F02849A32CFF6E0600174696 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		F02849A42CFF6E1600174696 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		F031C1B22CFB4AD900FF164F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F07083812CFB49A4009A17B0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F0964BBD2CFF7A99006B6746 /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
 		F0BC42EA2CFB40D0009F6999 /* OnlineGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC42ED2CFB40D0009F6999 /* OnlineGroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesApp.swift; sourceTree = "<group>"; };
 		F0BC42F12CFB40D1009F6999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0964BBC2CFF7A1E006B6746 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				F0D54C942CFB4F3300D3E5E9 /* UIExtension.swift */,
+				F028499F2CFF5CBA00174696 /* RoundButton.swift */,
+				F0964BBD2CFF7A99006B6746 /* CountryPickerUI.swift */,
 			);
 			path = UiCommon;
 			sourceTree = "<group>";
@@ -57,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F07083812CFB49A4009A17B0 /* WelcomeView.swift */,
+				F02849A12CFF5E3A00174696 /* SignInView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -115,7 +128,9 @@
 			children = (
 				F0BC42FD2CFB46E9009F6999 /* Inter_18pt-SemiBold.ttf */,
 				F0BC42FE2CFB46EA009F6999 /* Inter_24pt-Medium.ttf */,
+				F02849A32CFF6E0600174696 /* Roboto-Medium.ttf */,
 				F0BC42FF2CFB46EA009F6999 /* Inter_24pt-Regular.ttf */,
+				F02849A42CFF6E1600174696 /* Roboto-Bold.ttf */,
 				F0BC42FC2CFB46E9009F6999 /* Inter_28pt-Bold.ttf */,
 			);
 			path = font;
@@ -159,6 +174,9 @@
 			dependencies = (
 			);
 			name = OnlineGroceries;
+			packageProductDependencies = (
+				F0964BBB2CFF7A1E006B6746 /* CountryPicker */,
+			);
 			productName = OnlineGroceries;
 			productReference = F0BC42EA2CFB40D0009F6999 /* OnlineGroceries.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +205,9 @@
 				Base,
 			);
 			mainGroup = F0BC42E12CFB40D0009F6999;
+			packageReferences = (
+				F0964BBA2CFF7A1E006B6746 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			productRefGroup = F0BC42EB2CFB40D0009F6999 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,9 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0964BBE2CFF7A99006B6746 /* CountryPickerUI.swift in Sources */,
+				F02849A02CFF5CBA00174696 /* RoundButton.swift in Sources */,
 				F0BC42EE2CFB40D0009F6999 /* OnlineGroceriesApp.swift in Sources */,
 				F0D54C952CFB4F3300D3E5E9 /* UIExtension.swift in Sources */,
 				F07083822CFB49A4009A17B0 /* WelcomeView.swift in Sources */,
+				F02849A22CFF5E3A00174696 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +388,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +424,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0964BBA2CFF7A1E006B6746 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0964BBB2CFF7A1E006B6746 /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0964BBA2CFF7A1E006B6746 /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0BC42E22CFB40D0009F6999 /* Project object */;
 }
